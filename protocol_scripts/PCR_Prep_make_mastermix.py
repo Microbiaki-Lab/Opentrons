@@ -104,6 +104,6 @@ def run(protocol_context):
                 pipette = pip_l
         pipette.transfer(vol, source, mastermix_dest)
 
-    #Add the taq manually, then run the next protocol with the temploate
+    #Add the taq manually, then run the next protocol for distributing mastermix in 96 well plate, adding mastermix
     
     
