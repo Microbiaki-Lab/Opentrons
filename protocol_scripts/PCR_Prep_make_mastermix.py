@@ -18,7 +18,7 @@
 #need to change the volume here as well
 def get_values(*names):
     import json
-    _all_values = json.loads("""{"right_pipette":"p1000_single_gen2","left_pipette":"p300_single_gen2","master_mix_csv":"Reagent,Slot,Well,Volume\\n5x_Buffer,1,A2,3\\n25nm_MgCl,1,A3,40\\1.5mM_dmNTPs,2,A2,90\\nddH2O,2,A3,248\\nPrimer_Fwd,1,A4,25\\nPrimer_Rev,1,A5,25\\n"}""")
+    _all_values = json.loads("""{"right_pipette":"p1000_single_gen2","left_pipette":"p300_single_gen2","master_mix_csv":"Reagent,Slot,Well,Volume\\nBuffer,1,A2,3\\nMgCl,1,A3,40\\ndnNTPs,2,A2,90\\nddH2O,2,A3,248\\nPrimer_Fwd,1,A4,25\\nPrimer_Rev,1,A5,25\\n"}""")
     return [_all_values[n] for n in names]
 
 
